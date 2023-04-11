@@ -1,0 +1,55 @@
+let humanScore = 0;
+let computerScore = 0;
+let currentRoundNumber = 1;
+
+// Write your code below:
+/*const generateTarget = () =>{
+  return Math.floor(Math.random()*10)
+};
+console.log(generateTarget); 
+
+const compareGuesses= function (human, computer, secret)
+{
+  const humanDifference= Math.abs(secret-human); 
+  const computerDifference= Math.abs(secret-computer); 
+
+  if (humanDifference<= computerDifference)
+    return true; 
+  else
+    return false; 
+}
+
+const updateScore= winner  =>{
+  if (winner=== 'human')
+    humanScore++; 
+  else 
+    computerScore++; 
+}
+
+const advanceRound= () => {
+  currentRoundNumber++; 
+}*/
+
+const generateTarget = () => {
+  return Math.floor(Math.random()*10); 
+}
+
+const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
+  humanDifference= Math.abs(targetGuess-humanGuess);
+  computerGuess= Math.abs(targetGuess-computerGuess); 
+
+  if (humanDifference<=computerGuess)
+    return true; 
+  else
+    return false; 
+}
+
+const updateScore= winner =>{
+  if (winner === 'human')
+    humanScore++; 
+  else 
+    computerScore++; 
+} 
+
+const advanceRound = () =>{
+  c
