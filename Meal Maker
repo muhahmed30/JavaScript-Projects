@@ -1,0 +1,23 @@
+const menu = {
+  _meals: ['Pizza', 'Pasta', 'Burger'], 
+  _prices:  [1,2,3],
+  
+  set meals(mealsToCheck){
+    if (typeof mealsToCheck === 'string')
+      {return this._meals= mealsToCheck;}
+  },
+
+  set prices(pricesToCheck){
+    if (typeof pricesToCheck==='number')
+      return this._prices = pricesToCheck; 
+  },
+
+  todaysSpecials(num){
+    if (this._meals && this._prices)
+      {return `Today's Specials are ${this._meals} for $${this._prices}!`;} 
+      else
+        {return 'Meal and prices are not set correctly!'; }
+  }
+}; 
+
+console.log(menu.todaysSpecials()); 
