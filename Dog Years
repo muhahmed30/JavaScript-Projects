@@ -1,0 +1,16 @@
+//A variable declaring age
+const myAge= 25; 
+//Line dictating early years
+let earlyYears= 2; 
+earlyYears*=10.5
+
+let laterYears= myAge-2; 
+
+laterYears*=4;
+console.log(earlyYears);
+console.log(laterYears); 
+
+let myAgeInDogYears= laterYears+earlyYears; 
+let myName= ('Muhammad'.toLowerCase()); 
+
+console.log(`My name is ${myName}. I am a ${myAge} old in human years which is ${myAgeInDogYears}`); 
