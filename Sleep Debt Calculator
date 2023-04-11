@@ -1,0 +1,45 @@
+//Step 1 
+/*const getSleepHours= function (day)
+{
+
+} */
+const getSleepHours= day => {
+  if (day ==='monday')
+    return 9; 
+  else if (day==='tuesday')
+    return 7; 
+  else if (day==='wednesday')
+    return 6;
+  else if (day==='thursday')
+    return 5; 
+  else if (day === 'friday')
+    return 15; 
+  else if (day==='saturday')
+    return 3; 
+  else if (day==='sunday')
+    return 12; 
+}; 
+
+const getActualSleepHours=()=>
+  getSleepHours('monday')+
+  getSleepHours('tuesday')+ 
+  getSleepHours('wednesday')+          getSleepHours('thursday')+             getSleepHours('friday')+ 
+getSleepHours('saturday')+ getSleepHours('sunday');
+
+const getIdealSleepHours=(hours)=>{ 
+  return hours*7; 
+};
+
+const calculateSleepDebt= ()=>{
+  let actualSleepHours=(getActualSleepHours()); 
+  let idealSleepHours= (getIdealSleepHours(8)); 
+
+ if (actualSleepHours===idealSleepHours)
+ console.log('You got the perfect amount of sleep'); 
+else if (actualSleepHours>idealSleepHours)
+console.log('You got more sleep than needed. You got ' + (actualSleepHours-idealSleepHours) + ' more hours of sleep than ideal'); 
+else
+console.log('You got less sleep than needed. You got ' +(idealSleepHours-actualSleepHours)+ ' less hours of sleep than ideal.'); 
+  }; 
+
+  calculateSleepDebt(); 
