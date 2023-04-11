@@ -1,0 +1,15 @@
+//A constant variable for Kelvin
+const kelvin= 0; 
+//A constant celsius 
+const celsius= (kelvin-273); 
+//Conversion formula 
+let fahrenheit= (celsius*(9/5)+32); 
+//Rounding fahrenheit down 
+fahrenheit=Math.floor(fahrenheit); 
+//Printing temperature in Fahrenheit
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`); 
+
+//A constant var for Newton
+let newton= celsius*(33/100); 
+newton= Math.floor(newton); 
+console.log(`The temperature is ${newton} degrees in newton.`); 
